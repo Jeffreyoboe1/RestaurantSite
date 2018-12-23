@@ -1,0 +1,32 @@
+/*
+Creator: Jeffrey S. Padgett
+Date Created: 12/22/2018
+Last Modified:
+*/
+
+header, footer {
+  background-color: darkgreen;
+  color: white;
+}
+
+header {
+  height: 150px;
+  padding: 20px 10px 30px 10px;
+}
+
+footer {
+  height: 125px;
+  padding: 20px 10px 30px 10px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header h2 {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+}
