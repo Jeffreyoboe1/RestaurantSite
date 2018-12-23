@@ -22,12 +22,47 @@ Last Revision:
     <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css">
 
     <style>
+
+    form {
+      padding: 10px 10px 10px 20px;
+    }
+
+    input[type=text] {
+      border: 1px solid #0d1f2d;
+      width: 50%;
+      padding: 8px;
+      margin: 12px 10px;
+      box-sizing: border-box;
+      font-size: 1.1em;
+    }
+
+    input[type=textarea] {
+      padding: 8px;
+      margin: 12px 10px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        font-size: 1.2em;
+        background-color: green;
+        border-radius: 5px;
+        color: white;
+        padding: 4px 8px;
+    }
+
     /* for required field labels */
       .required {
         font-weight: bold;
+        width: 125px;
+
+      }
+
+      .alignLabel * {
+        vertical-align: middle;
       }
 
     </style>
+
 
   </head>
 
@@ -50,7 +85,7 @@ Last Revision:
     <form action="submit.html" method="post">
 
       <label class="required "for="name">Name: </label>
-      <input type="text" id="firstName" name="firstName" required > <br />
+      <input type="text" id="name" name="name" required > <br />
 
       <label class="required" for="email">Email: </label>
       <input type="text" id="email" name="email" required> <br />
@@ -66,8 +101,13 @@ Last Revision:
         <option value="other">Other</option>
       </select> <br />
 
-      <label for="additionalInfo">Additional Info:</label>
-      <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="40"></textarea> <br />
+
+      <p class="alignLabel">
+        <label for="additionalInfo">Additional Info:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="40"></textarea>
+      </p>
+
+      <br />
 
       <p>Have you been to the restaurant?
         <input type="radio" id="choice2" name="questionnaire" value="no" checked>
