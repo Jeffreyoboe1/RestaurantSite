@@ -23,7 +23,6 @@ Last Revision:
     <style>
 
 
-
     table {
       background-color: #ffffe6;
       width: 100%;
@@ -31,9 +30,21 @@ Last Revision:
 
     }
 
-
       table th {
         font-size: 1.2em;
+      }
+
+      .beverageTable tr {
+        border: 1px solid black;
+      }
+
+      .beverageTable thead tr{
+        background-color: white;
+      }
+
+      .beverageTable tbody tr:nth-child(even){
+        background-color: white;
+
       }
 
     </style>
@@ -145,11 +156,11 @@ Last Revision:
       </tr>
     </table>
 
-    <table>
-      <caption>Beverages</caption>
+    <table class="beverageTable">
+
       <thead>
         <tr>
-          <th>Beverages</th>
+          <th colspan="2">Beverages</th>
         </tr>
       </thead>
       <tbody>
