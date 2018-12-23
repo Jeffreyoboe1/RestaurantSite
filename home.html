@@ -17,14 +17,18 @@ Last Revision:
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css">
 
+    <!--font family from google: Bilbo Swash Caps-->
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
+
   </head>
 
-  <body>
+  <body background-color: hotpink;>
 
     <header >
       <h1>Pacileo's</h1>
       <h2 class="font-italic text-right mt-2">-- a Perfect Health Restaurant</h2>
     </header>
+
 
     <nav>
  <!-- replace with anchors, links -->
@@ -34,24 +38,27 @@ Last Revision:
       <hr />
     </nav>
 
-    <figure>
+    <div style="background-color: #ffffe6">
+      <figure>
+        <div style="text-align: center;">
+          <img src="images/vegetables400.jpg" alt="locally sourced vegetables">
+        </div>
 
-      <div style="text-align: center;">
-        <img src="images/vegetables400.jpg" alt="locally sourced vegetables">
-      </div>
-  </figure>
+        <!-- This could also be done this way, using bootstrap:
+        <img src="images/vegetables400.jpg" alt="locally sourced vegetables" class="rounded mx-auto d-block">
+        this rounds the corners, mx-auto centers it, and d-block makes it display as if a block element rather than inline.
+      -->
+      </figure>
 
-    <p><strong><em>Pacileo's</em></strong> is a gluten-free <em> Perfect Health Diet </em>
-     Restaurant based loosely on the Paleo diet. All meals are made to order from fresh,
-     locally sourced, organic ingredients by our master chefs.  In place of table sugar,
-     we use natural sweeteners like raw honey or maple syrup.  In place of typical wheat
-     flours, we may use a variety of natural flours, including rice, almond, coconut,
-     tapioca, and other flours.  We do offer goat milk, almond milk, or coconut milk
-     in place of common dairy milk.</p>
+      <strong><em>Pacileo's</em></strong> is a gluten-free <em> Perfect Health Diet </em>
+       Restaurant based loosely on the Paleo diet. All meals are made to order from fresh,
+       locally sourced, organic ingredients by our master chefs.  In place of table sugar,
+       we use natural sweeteners like raw honey or maple syrup.  In place of typical wheat
+       flours, we may use a variety of natural flours, including rice, almond, coconut,
+       tapioca, and other flours.  We do offer goat milk, almond milk, or coconut milk
+       in place of common dairy milk. <br><br>
 
-
-
-
+   </div>
 
     <footer>
 
@@ -61,6 +68,8 @@ Last Revision:
 
       <p>&copy; 2018 Jeffrey S. Padgett.  All rights reserved.</p>
     </footer>
+
+
 
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
