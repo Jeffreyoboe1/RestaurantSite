@@ -20,6 +20,14 @@ Last Revision:
     <!--font family from google: Bilbo Swash Caps-->
     <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps" rel="stylesheet">
 
+    <style>
+    /* for required field labels */
+      .required {
+        font-weight: bold;
+      }
+
+    </style>
+
   </head>
 
   <body>
@@ -38,14 +46,14 @@ Last Revision:
 
     <form action="submit.html" method="post">
 
-      <label for="name">Name: </label>
-      <input type="text" id="firstName" name="firstName" > <br />
+      <label class="required "for="name">Name: </label>
+      <input type="text" id="firstName" name="firstName" required > <br />
 
-      <label for="email">Email: </label>
-      <input type="text" id="email" name="email"> <br />
+      <label class="required" for="email">Email: </label>
+      <input type="text" id="email" name="email" required> <br />
 
-      <label for="phone">Phone: </label>
-      <input type="text" id="phone" name="phone" > <br />
+      <label class="required" for="phone">Phone: </label>
+      <input type="text" id="phone" name="phone" required > <br />
 
       <label for="inquiryReason">Reason for Inquiry: </label>
       <select id="inquiryReason" name="inquiryReason">
