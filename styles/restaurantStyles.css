@@ -38,7 +38,7 @@ nav {
   margin-top: 4px;
   border-top: 2px solid darkgreen;
   border-bottom: 2px groove darkgreen;
-
+  padding: 12px 0px;
 }
 
 nav a {
@@ -48,30 +48,20 @@ nav a {
 
 }
 
+nav .nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 nav .btn {
   background-color: darkgreen;
   color: #ffffe6;
 }
 
-/*
-nav a {
-    background-color: #5b7d87;
-    color: #fef9ff;
-    padding: 8px;
-    border: thin solid #0d1f2d;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    display: block;
-    margin: 20px;
-    width: 100px;
-    float: left;
-}
-*/
-
 nav a:visited {
-  color: green;
+  color: lightgreen;
 }
 
 nav a:hover {
