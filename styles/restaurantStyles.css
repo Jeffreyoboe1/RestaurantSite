@@ -79,3 +79,7 @@ nav a:hover {
 .nav-link:active {
   text-decoration: none;
 }
+
+.jumbotron {
+  background-color: #ccffcc; <!-- very light green -->
+}
