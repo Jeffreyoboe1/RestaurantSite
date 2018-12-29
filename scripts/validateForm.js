@@ -25,7 +25,7 @@ function validateForm() {
 function nameValid() {
   var name = document.getElementById("name").value;
 
-  if (name == "" || name.length<2) {
+  if (name == "") {
     alert("Enter your name.")
     document.getElementById("name").parentElement.className="hasError form-group";
     document.getElementById("name").focus();
@@ -36,7 +36,8 @@ function nameValid() {
 
 function emailValid() {
   var email = document.getElementById("email").value;
-  if (email.indexOf("@") == -1 || email[0] == "@" || email[0] == "." || email[email.length-1] == "." || email[email.length-1] == "@") {
+  if (email.indexOf("@") == -1 || email[0] == "@" || email[0] == "." || email[email.length-1] == "." || email[email.length-1] == "@"
+    || email[email.indexOf("@")+1] == ".") {
     alert("You did not enter a valid email address.");
     document.getElementById("email").parentElement.className="hasError form-group";
     document.getElementById("email").focus();
