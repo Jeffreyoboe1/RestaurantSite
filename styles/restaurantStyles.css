@@ -81,5 +81,6 @@ nav a:hover {
 }
 
 .jumbotron {
-  background-color: #ccffcc; <!-- very light green -->
+  background-color: #ccffcc;
+  text-align: center;
 }
